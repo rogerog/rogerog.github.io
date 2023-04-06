@@ -1,57 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
+   <style>table, th, td {
+    border: 2px solid; width: 300; }</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Escoge un color</title>
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #f1f1f1;
+        }
+        
+        li a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+        li a.active {
+            background-color: #b44aa4;
+            color: white;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+        tr {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #f1f1f1;
+        }
+        
+        td a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+        td a.active {
+            background-color: #b44aa4;
+            color: white;
+        }
+        
+        td a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+        h1 {color: rgb(0, 0, 0);}
+        </style>
 </head>
-<body>
+<body style="background-color: white;">
     <header>
-        <h1>listas ordenas, ordenas y de descrpcion</h1>
-    </header>
-    <br>
-    <hr>
-    <main>
-        <h2>lista desordenada</h2>
+        <h1>Escoge un color</h1>
         <ul>
-            <li>pollo</li>
-            <li>arro</li>
-            <li>lechuga</li>
+            <li style="color:rgb(249, 249, 249);"><a class="active"href="start.html">blanco</a></li>&nbsp;
+            <li style="color:rgb(255, 0, 0);"><a href="rojo.html">rojo</a></li>&nbsp;
+            <li style="color:rgb(12, 0, 245);"><a href="azul.html">azul</a></li>&nbsp;
+            <li style="color:rgb(237, 249, 6);"><a href="amarillo.html">amarillo</a></li>&nbsp;
+            <li style="color:rgb(0, 253, 25);"><a href="verde.html">verde</a></li>
         </ul>
-        <br>
-        <hr>
-        <h2>lista ordenada</h2>
-        <ol type="I">
-            <li>arroz</li>
-            <li>pepa</li>
-            <li></li> 
-        </ol>
-        <br>
-        <hr>
-        <h2>lista descriptiba</h2>
-        <dl>cafe</dl>
-        <dd>se toma</dd>
-        <dl>leche</dl>
-        <dd>se toma con el cafe</dd>
-        <br>
-        <hr>
-        <h2>tabla</h2>
-        <table border="2px" width="300">
-            <tr>
-                <th>compania</th>
-                <th>pais</th>
-                <th>contacto</th>
-            </tr>
-            <tr>
-                <td>colombiano</td>
-                <td>colombia</td>
-                <td>321654987</td>
-            </tr>
+        &nbsp;
+        <table>
+        <tr>
+           <th>color</th> 
+        </tr>
+           <tr>
+            <td style="background-color:rgb(255, 255, 255);"><a class="active"href="start.html">blanco</a></td>&nbsp;
+            <td style="background-color:rgb(255, 0, 0);"><a href="rojo.html">rojo</a></td>&nbsp;
+            <td style="background-color:rgb(12, 0, 245);"><a href="azul.html">azul</a></td>&nbsp;
+            <td style="background-color:rgb(237, 249, 6);"><a href="amarillo.html">amarillo</a></td>&nbsp;
+            <td style="background-color:rgb(0, 253, 25);"><a href="verde.html">verde</a></td>
+        </tr>
         </table>
-    </main>
-    <footer>
-
-    </footer>
+    </header>
 </body>
 </html>
