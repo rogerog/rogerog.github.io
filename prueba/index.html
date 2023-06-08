@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Hoja de Vida</title>
+</head>
+<body>
+    <form action="procesar.php" method="post">
+        <label>Primer Nombre:</label>
+        <input type="text" name="primer_nombre" required><br>
+
+        <label>Segundo Nombre:</label>
+        <input type="text" name="segundo_nombre"><br>
+
+        <label>Primer Apellido:</label>
+        <input type="text" name="primer_apellido" required><br>
+
+        <label>Segundo Apellido:</label>
+        <input type="text" name="segundo_apellido"><br>
+
+        <label>Tipo de Documento:</label>
+        <select name="tipo_documento">
+            <option value="cedula">Cédula</option>
+            <option value="pasaporte">Pasaporte</option>
+        </select><br>
+
+        <label>Número de Teléfono:</label>
+        <input type="tel" name="telefono"><br>
+
+        <label>Número de Pasaporte:</label>
+        <input type="text" name="numero_pasaporte"><br>
+
+        <label>Fecha de Nacimiento:</label>
+        <input type="date" name="fecha_nacimiento" required><br>
+
+        <label>Sexo:</label>
+        <input type="radio" name="sexo" value="masculino" required> Masculino
+        <input type="radio" name="sexo" value="femenino" required> Femenino<br>
+
+        <label>Departamento:</label>
+        <input type="text" name="departamento" required><br>
+
+        <label>Ciudad:</label>
+        <input type="text" name="ciudad" required><br>
+
+        <label>Peso:</label>
+        <input type="number" name="peso" required><br>
+
+        <label>Estatura:</label>
+        <input type="number" name="estatura" required><br>
+
+        <label>Estado Civil:</label>
+        <select name="estado_civil">
+            <option value="soltero">Soltero(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viudo">Viudo(a)</option>
+        </select><br>
+
+        <label>Dirección de Residencia:</label>
+        <textarea name="direccion" rows="5" cols="30" required></textarea><br>
+
+        <label>Correo Electrónico:</label>
+        <input type="email" name="correo" required><br>
+
+        <label>Estudios Realizados:</label>
+        <textarea name="estudios" rows="5" cols="30" required></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
